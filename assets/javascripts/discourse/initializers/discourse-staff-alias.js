@@ -147,28 +147,6 @@ function initialize(api) {
     api.includePostAttributes("aliased_username");
     api.includePostAttributes("is_staff_aliased");
 
-    api.addPosterIcon((cfs, attrs) => {
-      if (attrs.is_staff_aliased) {
-        const props = {
-          icon: "user-secret",
-          className: "user-title",
-        };
-
-        if (attrs.aliased_username) {
-          props.text = attrs.aliased_username;
-
-          props.title = I18n.t("discourse_staff_alias.poster_icon_title", {
-            username: attrs.aliased_username,
-          });
-
-          props.url = `/u/${attrs.aliased_username}`;
-        } else {
-          props.text = I18n.t("discourse_staff_alias.aliased_user_deleted");
-        }
-
-        return props;
-      }
-    });
   }
 }
 
