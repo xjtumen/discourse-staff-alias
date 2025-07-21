@@ -4,15 +4,15 @@ en:
       composer_actions:
         as_staff_alias:
           reply:
-            label: "Toggle Reply As Staff Alias"
-            desc: "Post will be created under an alias staff user"
+            label: "Toggle Reply As Anonymous User"
+            desc: "Post will be created under an anonymous user"
           edit:
-            label: "Toggle Edit As Staff Alias"
-            desc: "Post will be edited under an alias staff user"
+            label: "Toggle Edit As Anonymous User"
+            desc: "Post will be edited under an anonymous user"
           create_topic:
-            label: "Create New Topic As Staff Alias"
-            desc: "Topic will be created under an alias staff user"
+            label: "Create New Topic As Anonymous User"
+            desc: "Topic will be created under an anonymous user"
     discourse_staff_alias:
-      poster_icon_title: "Posted as staff alias by @%{username}"
-      post_revision_icon_title: "Edited as staff alias by @%{username}"
+      poster_icon_title: "Posted as anonymous user by @%{username}"
+      post_revision_icon_title: "Edited as anonymous user by @%{username}"
       aliased_user_deleted: "Deleted User"

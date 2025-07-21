@@ -1,11 +1,11 @@
 en:
   site_settings:
     staff_alias_enabled: "Enable discourse-staff-alias plugin"
-    staff_alias_username: "Username of the alias user"
-    staff_alias_allowed_groups: "Groups that are allowed to post as staff alias user"
+    staff_alias_username: "Username of the anonymous user"
+    staff_alias_allowed_groups: "Groups that are allowed to post as anonymous user"
     errors:
       staff_alias_username_not_set: "You cannot enable discourse-staff-alias unless you've configured 'staff_alias_username'."
   post_revisions:
     errors:
-      cannot_edit_whisper_as_staff_alias: "You cannot edit a whisper as a staff alias user."
-      cannot_edit_aliased_post_as_staff: "You can only edit a staff alias post as the staff alias user."
+      cannot_edit_whisper_as_staff_alias: "You cannot edit an anonymous whisper as an anonymous user."
+      cannot_edit_aliased_post_as_staff: "You can only edit an anonymous post as the anonymous user."

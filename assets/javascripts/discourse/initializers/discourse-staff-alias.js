@@ -119,28 +119,6 @@ function initialize(api) {
 
     api.addTrackedPostProperties("aliased_username", "is_staff_aliased");
 
-    api.addPosterIcon((cfs, post) => {
-      if (post.is_staff_aliased) {
-        const props = {
-          icon: "user-secret",
-          className: "user-title",
-        };
-
-        if (post.aliased_username) {
-          props.text = post.aliased_username;
-
-          props.title = i18n("discourse_staff_alias.poster_icon_title", {
-            username: post.aliased_username,
-          });
-
-          props.url = `/u/${post.aliased_username}`;
-        } else {
-          props.text = i18n("discourse_staff_alias.aliased_user_deleted");
-        }
-
-        return props;
-      }
-    });
   }
 }
 
